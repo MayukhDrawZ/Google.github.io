@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Google</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/ab6043fc00.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+    
+</head>
+<body>
+
+    <div class="preloader">
+
+        <p class="preloader-text">
+           <span class="span1">Welcome Back!, </span> <br>
+                <span  class="span2">Mayukh !......</span>
+        </p>
+
+
+      
+        
+       
+            
+    </div>
+
+    <main>
+
+
+        
+
+
+
+
+    <section class="container">
+
+        <nav class="navbar">
+
+            <ul>
+            <a href="https://www.youtube.com/c/MayukhDrawZ" target="_blank" class="nav-a">
+                <li><i class="fa-brands fa-youtube"  id="yt"></i></li>
+            
+            </a>
+            <a href="https://instagram.com/mayukh_drawz?igshid=ZGUzMzM3NWJiOQ==" target="_blank" class="nav-a">
+                <li><i class="fa-brands fa-instagram" id="ig"></i></li>
+            </a>
+            <a href="https://www.google.com/webhp" target="_blank" class="nav-a">
+                <li> <i class="fa-brands fa-google" id="goo"></i></li>
+            </a>
+            
+
+                
+            </ul>
+        
+        </nav>
+
+
+        <div id="time"></div>
+
+
+
+
+        <form action="https://www.google.com/search" method="get" autocomplete="off">
+
+            <i class="fa-brands fa-google" id="google"></i>
+
+            <input type="text" name="q" placeholder="Search Google">
+            <button type="submit" class="btn1"><i class="fa-solid fa-magnifying-glass" id="search"></i></button>
+            
+            
+
+
+        </form>
+
+
+
+    </section>
+
+
+
+
+    <section class="links">
+        
+
+
+      <div class="col">
+
+        <div class="item">
+
+       
+
+            <a href="https://github.com/" target="_blank">      <i class="fa-brands fa-github" id="github"></i>Github</a>
+
+
+        </div>
+
+        <div class="item">
+       
+            
+            <a href="https://mayukhdrawz.github.io/" target="_blank"><i class="fa-solid fa-globe" id="globe"></i>Website</a>
+
+
+
+
+
+        </div>
+
+        <div class="item">
+       
+
+           
+
+            <a href="https://search.google.com/search-console?utm_source=about-page&resource_id=https://mayukhdrawz.github.io/" target="_blank"> <i class="fa-brands fa-google" id="searchconsole"></i>Search Console</a>
+
+
+
+
+
+        </div>
+
+
+        
+      </div>
+
+      <div class="col">
+        <div class="item">
+          
+            <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" target="_blank">  <i class="fa-solid fa-envelope" id="mail"></i>Gmail</a>
+
+
+
+        </div>
+
+        <div class="item">
+          
+            <a href="https://fontawesome.com/search?q=font%20awesome&o=r" target="_blank">  <i class="fa-solid fa-font-awesome" id="awesome"></i>Font awesome</a>
+
+
+
+        </div>
+
+        <div class="item">
+        
+            <a href="https://www.youtube.com/" target="_blank">    <i class="fa-brands fa-youtube"  id="yts"></i>Youtube</a>
+
+
+
+        </div>
+
+      </div>
+
+
+
+
+    </section>
+
+    </main>
+
+    <script>
+          function DisplayTime(){
+             var d = new Date();
+             var hour=d.getHours();
+             var min=d.getMinutes();
+             var sec=d.getSeconds();
+             var date=d.getDate();
+             document.getElementById('time').innerHTML= hour + ":" + min +":" + sec ;
+  
+           
+        }
+        setInterval(DisplayTime,1000);
+    </script>
+
+
+    
+</body>
+</html>

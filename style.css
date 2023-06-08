@@ -1,0 +1,483 @@
+*{
+    margin: 0;
+    padding: 0;
+  
+    
+   
+}
+::-webkit-scrollbar{
+    width: 5px;
+  }
+  ::-webkit-scrollbar-track{
+    background-color: #000;
+  }
+  ::-webkit-scrollbar-thumb{
+    background-color: #ccc;
+    border-radius: 20px;
+  }
+
+
+  body{
+   
+    
+
+
+    
+
+    
+background-image: linear-gradient(rgba(0,0,0,0.67),rgba(0,0,0,0.67)) ,url('web\ bg\ 6.jpg'); 
+
+ background-position: center center; 
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed; 
+
+
+
+min-height: 100vh;
+
+
+display: flex;
+flex-direction: column;
+
+
+
+
+  
+    
+ 
+    
+
+  }
+
+  .preloader{
+  position: fixed;
+  background-image: linear-gradient(147deg, #000000 0%, #021624 74%);
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  top: 0%;
+  bottom: 0;
+  transition: all 0.5s ease;
+  animation: preloader 2s forwards;
+  animation-delay: 2.5s;
+
+  }
+  @keyframes preloader{
+
+    0%{
+      top: 0%;
+    }
+    100%{
+      top: -100%;
+    }
+  }
+
+  .preloader-text{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    font-size: 70px;
+
+    animation: reveal 2s forwards;
+
+    
+
+
+
+
+    
+  }
+
+  .span1{
+ 
+      opacity: 0;
+      animation-name: reveal-1 ;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      animation-duration: 3s;
+      animation-direction: alternate;
+      animation-delay: none;
+  }
+  
+   @keyframes  reveal-1{
+      0%{
+          opacity:0%;
+      }
+      15%{
+          opacity: 0%;
+      }
+      50%{
+          opacity: 25%;
+      }
+      75%{
+          opacity:85%;
+      }
+      100%{
+          opacity: 100%;
+      }
+   
+   }
+  .span2{
+ 
+      opacity: 0;
+      animation-name: reveal-2 ;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      animation-duration: 3s;
+      animation-direction: alternate;
+      animation-delay: 1s;
+
+      color: #37ff14d0;
+      margin-left: 7rem;
+  }
+
+
+  
+   @keyframes  reveal-2{
+      0%{
+          opacity:0%;
+      }
+      15%{
+          opacity: 0%;
+      }
+      50%{
+          opacity: 25%;
+      }
+      75%{
+          opacity:85%;
+      }
+      100%{
+          opacity: 100%;
+      }
+   
+   }
+  
+
+
+  
+  
+  main{
+    display: flex;
+flex-direction: column; 
+gap: 15rem;
+  }
+ .container{
+    height: 100%; 
+    width: 100%;
+
+ 
+} 
+
+.navbar{
+  background-color: transparent;
+  width: 100%;
+  margin-top: 2rem;
+  margin-left: -7rem;
+
+ 
+  
+}
+li{
+  list-style: none;
+   background-color: white;
+   border-radius: 10000px; 
+  transition: all 0.4s ease-out;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul{
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  align-items: right;
+  justify-content: right;
+  margin-left: 2rem;
+
+
+
+}
+
+
+#ig,#yt{
+  font-size: 20px;
+  color: black;
+  padding: 0.5rem;
+} 
+
+#goo{
+  font-size: 20px;
+  color: black;
+  padding: 0.5rem;
+
+}
+li:hover{
+  transform: scale(1.5);
+  background-color:  #37ff14d0;
+ 
+
+  
+}
+
+
+form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12rem;
+  margin-left: 1rem;
+  gap: 1rem;
+
+}
+
+#google{
+  color: #fff;
+  font-size: 20px;
+ 
+
+
+ 
+}
+
+input{
+  color: white;
+  background-color: #313639;
+  border-radius: 22px;
+
+  height: 2rem;
+  width: 30rem;
+  padding: 0 2rem;
+  border: none;
+  transition: all 0.3s ease;
+ 
+
+
+
+}
+
+input:focus{
+  border: none;
+  outline: none;
+  box-shadow:
+  6.6px 0.8px 5.3px rgba(0, 0, 0, 0.271),
+  22.1px 2.7px 17.9px rgba(0, 0, 0, 0.399),
+  99px 12px 80px rgba(0, 0, 0, 0.67)
+;
+
+}
+
+input:hover{
+  border: none;
+  outline: none;
+  box-shadow:
+  6.6px 0.8px 5.3px rgba(0, 0, 0, 0.271),
+  22.1px 2.7px 17.9px rgba(0, 0, 0, 0.399),
+  99px 12px 80px rgba(0, 0, 0, 0.67)
+;
+
+}
+.btn1{
+  border-radius: 22px;
+
+
+  
+  border: none;
+  background-color: #313639;
+ 
+  height: 2.03rem;
+  width: 05rem;
+  transition: all 0.33s ease-in-out;
+
+
+
+}
+.btn1:hover{
+  background-color: #37ff14d0;
+  transform: translateX(10px);
+  box-shadow:
+  6.6px 0.8px 5.3px rgba(0, 0, 0, 0.271),
+  22.1px 2.7px 17.9px rgba(0, 0, 0, 0.399),
+  99px 12px 80px rgba(0, 0, 0, 0.67)
+;
+
+
+
+
+}
+.btn1:focus{
+  box-shadow:
+  6.6px 0.8px 5.3px rgba(0, 0, 0, 0.271),
+  22.1px 2.7px 17.9px rgba(0, 0, 0, 0.399),
+  99px 12px 80px rgba(0, 0, 0, 0.67)
+;
+
+
+}
+
+
+
+
+#search{
+  color: #fff;
+  font-size: 20px;
+  
+}
+
+
+#time{
+  display: flex;
+  flex-wrap: wrap;
+
+  
+  
+  border: none;
+  
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  color: #fff;
+  width: 100%;
+  height: 5rem;
+  position: absolute;
+  top: 4rem;
+  right: 0;
+  left: 0;
+  font-family: 'Poppins', sans-serif; 
+  text-align: center;
+
+
+
+
+  background-color: transparent;
+ 
+  
+ 
+
+}
+
+.links{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-bottom: 3rem;
+}
+
+.col{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+   gap: 5rem;                                                 /*  https://www.google.co.in/?gfe_rd=cr&ei=Hd2SV_TXG86BogOa9rGgAw&gws_rd=ssl */
+
+  text-align: center;
+}
+
+
+
+.item a{
+   display: flex;
+  flex-direction: column; 
+
+height: 7rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 20rem;
+  border: 1px solid #fff;
+  background: transparent;
+
+
+  border-radius: 26px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+
+  
+
+}
+
+
+
+
+.item a:hover{
+  background-color: #37ff14d0;
+}
+
+
+.item a{
+
+  font-family: 'Poppins', sans-serif; 
+  text-align: center;
+
+  
+
+
+
+
+
+
+}
+
+
+
+#github{
+  color: white;
+  font-size: 60px;
+  text-align: center;
+  text-align: center;
+
+
+  
+
+} 
+#globe{
+  color: white;
+  font-size: 60px;
+  text-align: center;
+  
+
+} 
+#mail{
+  color: white;
+  font-size: 60px;
+  text-align: center;
+
+   
+  
+
+} 
+#awesome{
+  color: white;
+  font-size: 60px;
+  text-align: center;
+  
+
+} 
+#searchconsole{
+  color: white;
+  font-size: 60px;
+  text-align: center;
+  
+
+} 
+#yts{
+  color: white;
+  font-size: 60px;
+  text-align: center;
+  
+
+} 
