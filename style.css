@@ -25,7 +25,7 @@
     
 
     
-background-image: linear-gradient(rgba(0,0,0,0.67),rgba(0,0,0,0.67)) ,url('web\ bg\ 6.jpg'); 
+background-image:url('web\ bg\ 6.jpg'); 
 
  background-position: center center; 
 background-size: cover;
